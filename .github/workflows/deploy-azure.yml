@@ -12,7 +12,7 @@ permissions:
   contents: read
 
 env:
-  AZURE_WEBAPP_NAME: 'rg-p-fr-com'
+  AZURE_WEBAPP_NAME: 'fabriciorojas'
   AZURE_SUBSCRIPTION_ID: '544c4fa2-0d6f-490c-a407-89d4f9be2c84'
 
 jobs:
