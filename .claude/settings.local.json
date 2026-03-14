@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sL -o /Users/jrojas2/fabriciorojas.com/images/efferent.png \"https://www.google.com/s2/favicons?domain=efferenthealth.com&sz=128\")",
+      "Bash(curl -sL -o /Users/jrojas2/fabriciorojas.com/images/juntoz.png \"https://www.google.com/s2/favicons?domain=juntoz.com&sz=128\")",
+      "Bash(curl -sL -o /Users/jrojas2/fabriciorojas.com/images/imf.png \"https://www.imf.org/apple-touch-icon.png\")",
+      "Bash(curl -sL -o /Users/jrojas2/fabriciorojas.com/images/idb.png \"https://www.iadb.org/apple-touch-icon.png\")",
+      "Bash(curl -sL -o /Users/jrojas2/fabriciorojas.com/images/sap.png \"https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg.adapt.svg/1493030643828.svg\")",
+      "Bash(curl -sL -o /Users/jrojas2/fabriciorojas.com/images/efferent.png \"https://efferenthealth.com/apple-touch-icon.png\")",
+      "Bash(curl -sL -o /Users/jrojas2/fabriciorojas.com/images/juntoz.png \"https://juntoz.com/apple-touch-icon.png\")",
+      "Bash(curl -sL -o /Users/jrojas2/fabriciorojas.com/images/imf.png \"https://www.google.com/s2/favicons?domain=imf.org&sz=128\")",
+      "Bash(curl -sL -o /Users/jrojas2/fabriciorojas.com/images/idb.png \"https://www.google.com/s2/favicons?domain=iadb.org&sz=128\")",
+      "Bash(curl -sL -o /Users/jrojas2/fabriciorojas.com/images/sap.png \"https://www.google.com/s2/favicons?domain=sap.com&sz=128\")",
+      "Bash(file /Users/jrojas2/fabriciorojas.com/images/*.png)",
+      "Bash(curl -sL -o /Users/jrojas2/fabriciorojas.com/images/sap.svg \"https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg/sap-logo-svg.svg\")",
+      "Bash(curl -sL -o /Users/jrojas2/fabriciorojas.com/images/juntoz.svg \"https://juntozstgsrvproduction.blob.core.windows.net/cms-images/jz_mall_blanco.svg\")"
+    ]
+  }
+}
