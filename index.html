@@ -169,10 +169,10 @@
         :root {
             --primary: #302b63;
             --primary-light: #4a43a0;
-            --accent: #7c6ef0;
+            --accent: #5b4bdf;
             --dark: #0f0c29;
             --text: #2d2d3a;
-            --text-light: #6b6b80;
+            --text-light: #555566;
             --bg: #fafafe;
             --white: #ffffff;
         }
@@ -207,20 +207,25 @@
         .logo {
             font-size: 1.2rem;
             font-weight: 700;
-            color: #fff;
+            color: var(--primary);
             text-decoration: none;
             letter-spacing: -0.5px;
         }
 
+        nav.scrolled .logo { color: #fff; }
+
         .nav-links { display: flex; gap: 2rem; list-style: none; }
         .nav-links a {
-            color: rgba(255,255,255,0.8);
+            color: var(--text-light);
             text-decoration: none;
             font-size: 0.9rem;
             font-weight: 500;
             transition: color 0.2s;
         }
-        .nav-links a:hover { color: #fff; }
+        .nav-links a:hover { color: var(--primary); }
+
+        nav.scrolled .nav-links a { color: rgba(255,255,255,0.8); }
+        nav.scrolled .nav-links a:hover { color: #fff; }
 
         /* HERO */
         .hero {
