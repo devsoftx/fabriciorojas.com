@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="https://schema.org/ProfilePage">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabricio Rojas — Cloud Solution Architect, DevOps & AI Tech Lead</title>
-    <meta name="description" content="Jose Fabricio Rojas Quiroz is a Cloud Solution Architect and Tech Lead specializing in Cloud Architecture, DevSecOps, AI-Driven Solutions, and Enterprise Architecture. Based in Washington, D.C., with nearly 20 years of experience at the IMF, IDB, and SAP Ariba.">
+    <meta name="description"
+        content="Jose Fabricio Rojas Quiroz is a Cloud Solution Architect and Tech Lead specializing in Cloud Architecture, DevSecOps, AI-Driven Solutions, and Enterprise Architecture. Based in Washington, D.C., with nearly 20 years of experience at the IMF, IDB, and SAP Ariba.">
     <meta name="author" content="Jose Fabricio Rojas Quiroz">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://fabriciorojas.com/">
@@ -12,7 +14,8 @@
     <!-- Open Graph / Social -->
     <meta property="og:type" content="profile">
     <meta property="og:title" content="Fabricio Rojas — Cloud Solution Architect, DevOps & AI Tech Lead">
-    <meta property="og:description" content="Tech Lead helping organizations modernize infrastructure, adopt AI, and scale through cloud-native solutions. Nearly 20 years of experience at IMF, IDB, SAP Ariba.">
+    <meta property="og:description"
+        content="Tech Lead helping organizations modernize infrastructure, adopt AI, and scale through cloud-native solutions. Nearly 20 years of experience at IMF, IDB, SAP Ariba.">
     <meta property="og:url" content="https://fabriciorojas.com/">
     <meta property="og:site_name" content="Fabricio Rojas">
     <meta property="og:locale" content="en_US">
@@ -22,7 +25,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Fabricio Rojas — Cloud Solution Architect, DevOps & AI Tech Lead">
-    <meta name="twitter:description" content="Tech Lead helping organizations modernize infrastructure, adopt AI, and scale through cloud-native solutions.">
+    <meta name="twitter:description"
+        content="Tech Lead helping organizations modernize infrastructure, adopt AI, and scale through cloud-native solutions.">
 
     <!-- Structured Data: Person -->
     <script type="application/ld+json">
@@ -164,7 +168,13 @@
     </script>
 
     <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
         :root {
             --primary: #302b63;
@@ -200,7 +210,7 @@
 
         nav.scrolled {
             background: rgba(15, 12, 41, 0.95);
-            box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
             backdrop-filter: blur(10px);
         }
 
@@ -212,9 +222,16 @@
             letter-spacing: -0.5px;
         }
 
-        nav.scrolled .logo { color: #fff; }
+        nav.scrolled .logo {
+            color: #fff;
+        }
 
-        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
         .nav-links a {
             color: var(--text-light);
             text-decoration: none;
@@ -222,10 +239,46 @@
             font-weight: 500;
             transition: color 0.2s;
         }
-        .nav-links a:hover { color: var(--primary); }
 
-        nav.scrolled .nav-links a { color: rgba(255,255,255,0.8); }
-        nav.scrolled .nav-links a:hover { color: #fff; }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        nav.scrolled .nav-links a {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        nav.scrolled .nav-links a:hover {
+            color: #fff;
+        }
+
+        .lang-switch {
+            background: rgba(124, 110, 240, 0.15);
+            border: 1px solid rgba(124, 110, 240, 0.3);
+            color: var(--text-light);
+            padding: 0.35rem 0.8rem;
+            border-radius: 8px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            letter-spacing: 0.5px;
+        }
+
+        .lang-switch:hover {
+            background: rgba(124, 110, 240, 0.25);
+        }
+
+        nav.scrolled .lang-switch {
+            color: rgba(255, 255, 255, 0.8);
+            border-color: rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        nav.scrolled .lang-switch:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
 
         /* HERO */
         .hero {
@@ -250,7 +303,11 @@
             background: linear-gradient(to bottom, transparent, var(--bg));
         }
 
-        .hero-content { max-width: 720px; position: relative; z-index: 1; }
+        .hero-content {
+            max-width: 720px;
+            position: relative;
+            z-index: 1;
+        }
 
         .hero-label {
             display: inline-block;
@@ -282,13 +339,18 @@
 
         .hero-desc {
             font-size: 1.2rem;
-            color: rgba(255,255,255,0.7);
+            color: rgba(255, 255, 255, 0.7);
             max-width: 560px;
             margin: 0 auto 2.5rem;
             line-height: 1.7;
         }
 
-        .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
         .btn {
             display: inline-flex;
@@ -302,7 +364,9 @@
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        .btn:hover { transform: translateY(-2px); }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
 
         .btn-primary {
             background: var(--accent);
@@ -310,20 +374,24 @@
             box-shadow: 0 4px 15px rgba(124, 110, 240, 0.4);
         }
 
-        .btn-primary:hover { box-shadow: 0 8px 25px rgba(124, 110, 240, 0.5); }
+        .btn-primary:hover {
+            box-shadow: 0 8px 25px rgba(124, 110, 240, 0.5);
+        }
 
         .btn-ghost {
-            border: 2px solid rgba(255,255,255,0.3);
+            border: 2px solid rgba(255, 255, 255, 0.3);
             color: #fff;
         }
 
         .btn-ghost:hover {
-            border-color: rgba(255,255,255,0.6);
-            box-shadow: 0 4px 15px rgba(255,255,255,0.1);
+            border-color: rgba(255, 255, 255, 0.6);
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
         }
 
         /* SECTIONS */
-        section { padding: 5rem 2rem; }
+        section {
+            padding: 5rem 2rem;
+        }
 
         .section-header {
             text-align: center;
@@ -338,7 +406,10 @@
             margin-bottom: 0.6rem;
         }
 
-        .section-header p { color: var(--text-light); font-size: 1.05rem; }
+        .section-header p {
+            color: var(--text-light);
+            font-size: 1.05rem;
+        }
 
         /* WHAT I DO */
         .services-grid {
@@ -353,14 +424,14 @@
             background: var(--white);
             border-radius: 16px;
             padding: 2rem;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
             border: 1px solid #ececf4;
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
         .service-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
         }
 
         .service-icon {
@@ -391,7 +462,10 @@
             color: var(--dark);
         }
 
-        .service-card p { font-size: 0.93rem; color: var(--text-light); }
+        .service-card p {
+            font-size: 0.93rem;
+            color: var(--text-light);
+        }
 
         /* TRUSTED BY */
         .trusted {
@@ -457,10 +531,20 @@
             border-bottom: 1px solid #f5f5fa;
         }
 
-        .credential-item:last-child { border-bottom: none; }
+        .credential-item:last-child {
+            border-bottom: none;
+        }
 
-        .credential-item strong { display: block; color: var(--dark); font-size: 0.95rem; }
-        .credential-item span { font-size: 0.85rem; color: var(--text-light); }
+        .credential-item strong {
+            display: block;
+            color: var(--dark);
+            font-size: 0.95rem;
+        }
+
+        .credential-item span {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
 
         /* CTA */
         .cta-section {
@@ -480,7 +564,7 @@
         }
 
         .cta-section p {
-            color: rgba(255,255,255,0.7);
+            color: rgba(255, 255, 255, 0.7);
             font-size: 1.1rem;
             margin-bottom: 2rem;
             max-width: 480px;
@@ -488,7 +572,12 @@
             margin-right: auto;
         }
 
-        .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
         /* FOOTER */
         footer {
@@ -499,7 +588,10 @@
             border-top: 1px solid #ececf4;
         }
 
-        footer a { color: var(--accent); text-decoration: none; }
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
 
         /* FLOATING SHAPES */
         .hero-shapes {
@@ -516,184 +608,381 @@
             background: var(--accent);
         }
 
-        .shape-1 { width: 400px; height: 400px; top: -100px; right: -100px; }
-        .shape-2 { width: 300px; height: 300px; bottom: -50px; left: -80px; }
-        .shape-3 { width: 150px; height: 150px; top: 40%; left: 10%; opacity: 0.05; }
+        .shape-1 {
+            width: 400px;
+            height: 400px;
+            top: -100px;
+            right: -100px;
+        }
+
+        .shape-2 {
+            width: 300px;
+            height: 300px;
+            bottom: -50px;
+            left: -80px;
+        }
+
+        .shape-3 {
+            width: 150px;
+            height: 150px;
+            top: 40%;
+            left: 10%;
+            opacity: 0.05;
+        }
 
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.4rem; }
-            .hero-desc { font-size: 1.05rem; }
-            .credentials { grid-template-columns: 1fr; }
-            .nav-links { display: none; }
-            section { padding: 3.5rem 1.5rem; }
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+
+            .hero-desc {
+                font-size: 1.05rem;
+            }
+
+            .credentials {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .lang-switch {
+                font-size: 0.78rem;
+                padding: 0.3rem 0.7rem;
+            }
+
+            section {
+                padding: 3.5rem 1.5rem;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<nav id="navbar" aria-label="Main navigation">
-    <a href="#" class="logo" aria-label="Fabricio Rojas - Home">FR</a>
-    <ul class="nav-links">
-        <li><a href="#expertise">Expertise</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#background">Background</a></li>
-        <li><a href="#connect">Connect</a></li>
-    </ul>
-</nav>
+    <nav id="navbar" aria-label="Main navigation">
+        <a href="#" class="logo" aria-label="Fabricio Rojas - Home">FR</a>
+        <ul class="nav-links">
+            <li><a href="#expertise" data-i18n="nav.expertise">Expertise</a></li>
+            <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+            <li><a href="#background" data-i18n="nav.background">Background</a></li>
+            <li><a href="#connect" data-i18n="nav.connect">Connect</a></li>
+        </ul>
+        <button class="lang-switch" id="langSwitch" aria-label="Switch language">ES</button>
+    </nav>
 
-<main>
+    <main>
 
-<section class="hero" aria-label="Introduction">
-    <div class="hero-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-    </div>
-    <div class="hero-content">
-        <span class="hero-label">Cloud &middot; DevOps &middot; AI</span>
-        <h1>Building the future, <span class="highlight">one cloud at a time.</span></h1>
-        <p class="hero-desc">
-            I'm Fabricio Rojas — a Tech Lead helping organizations modernize infrastructure, adopt AI, and scale through cloud-native solutions.
-        </p>
-        <div class="hero-buttons">
-            <a href="mailto:me@fabriciorojas.com" class="btn btn-primary">Get in Touch</a>
-            <a href="https://linkedin.com/in/fabriciorojas" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
-        </div>
-    </div>
-</section>
+        <section class="hero" aria-label="Introduction">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="hero-content">
+                <span class="hero-label">Cloud &middot; DevOps &middot; AI</span>
+                <h1 data-i18n="hero.title">Building the future, <span class="highlight">one cloud at a time.</span></h1>
+                <p class="hero-desc" data-i18n="hero.desc">
+                    I'm Fabricio Rojas — IT Leader helping organizations modernize infrastructure, adopt AI, and scale
+                    through cloud-native solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="mailto:me@fabriciorojas.com" class="btn btn-primary" data-i18n="hero.cta">Get in Touch</a>
+                    <a href="https://linkedin.com/in/fabriciorojas" target="_blank" rel="noopener"
+                        class="btn btn-ghost">LinkedIn</a>
+                </div>
+            </div>
+        </section>
 
-<section id="expertise">
-    <div class="section-header">
-        <h2>What I Do</h2>
-        <p>Nearly 20 years turning complex infrastructure challenges into scalable, automated solutions.</p>
-    </div>
-    <div class="services-grid">
-        <div class="service-card">
-            <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/><path d="M4.9 4.9l14.2 14.2M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
-            <h3>Cloud Architecture</h3>
-            <p>Design and implement cloud-native platforms on Azure and AWS. From adoption strategy to seamless migration from on-premises.</p>
-        </div>
-        <div class="service-card">
-            <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
-            <h3>DevSecOps & Automation</h3>
-            <p>CI/CD pipelines, infrastructure as code, continuous monitoring, and security-first DevOps practices at scale.</p>
-        </div>
-        <div class="service-card">
-            <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M9.5 2a3 3 0 0 0-2.95 3.5A4 4 0 0 0 4 9.5c0 1.14.48 2.17 1.24 2.9A4 4 0 0 0 4 15.5a4 4 0 0 0 2.55 3.73A3 3 0 0 0 9.5 22h5a3 3 0 0 0 2.95-2.77A4 4 0 0 0 20 15.5a4 4 0 0 0-1.24-2.9A4 4 0 0 0 20 9.5a4 4 0 0 0-2.55-3.5A3 3 0 0 0 14.5 2h-5z"/><path d="M12 2v20"/><path d="M8 8h8"/><path d="M8 12h8"/><path d="M8 16h8"/></svg></div>
-            <h3>AI-Driven Solutions</h3>
-            <p>Leading AI adoption through Generative AI, intelligent automation, and AI governance integrated with cloud ecosystems.</p>
-        </div>
-        <div class="service-card">
-            <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
-            <h3>Enterprise Architecture</h3>
-            <p>Platform integrations, digital process automation, and infrastructure modernization aligned with organizational goals.</p>
-        </div>
-        <div class="service-card">
-            <div class="service-icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
-            <h3>Data Architecture</h3>
-            <p>Designing scalable data platforms, DataOps workflows, and governance frameworks that turn raw data into strategic assets.</p>
-        </div>
-        <div class="service-card">
-            <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
-            <h3>Cybersecurity</h3>
-            <p>Implementing security standards, identity management, threat protection, and compliance controls across cloud environments.</p>
-        </div>
-    </div>
-</section>
+        <section id="expertise">
+            <div class="section-header">
+                <h2 data-i18n="services.title">What I Do</h2>
+                <p data-i18n="services.subtitle">Nearly 20 years turning complex infrastructure challenges into
+                    scalable, automated solutions.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z" />
+                            <path
+                                d="M4.9 4.9l14.2 14.2M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg></div>
+                    <h3 data-i18n="services.cloud.title">Cloud Architecture</h3>
+                    <p data-i18n="services.cloud.desc">Design and implement cloud-native platforms on Azure and AWS.
+                        From adoption strategy to seamless migration from on-premises.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                        </svg></div>
+                    <h3 data-i18n="services.devops.title">DevSecOps & Automation</h3>
+                    <p data-i18n="services.devops.desc">CI/CD pipelines, infrastructure as code, continuous monitoring,
+                        and security-first DevOps practices at scale.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M9.5 2a3 3 0 0 0-2.95 3.5A4 4 0 0 0 4 9.5c0 1.14.48 2.17 1.24 2.9A4 4 0 0 0 4 15.5a4 4 0 0 0 2.55 3.73A3 3 0 0 0 9.5 22h5a3 3 0 0 0 2.95-2.77A4 4 0 0 0 20 15.5a4 4 0 0 0-1.24-2.9A4 4 0 0 0 20 9.5a4 4 0 0 0-2.55-3.5A3 3 0 0 0 14.5 2h-5z" />
+                            <path d="M12 2v20" />
+                            <path d="M8 8h8" />
+                            <path d="M8 12h8" />
+                            <path d="M8 16h8" />
+                        </svg></div>
+                    <h3 data-i18n="services.ai.title">AI-Driven Solutions</h3>
+                    <p data-i18n="services.ai.desc">Leading AI adoption through Generative AI, intelligent automation,
+                        and AI governance integrated with cloud ecosystems.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg viewBox="0 0 24 24">
+                            <rect x="3" y="3" width="7" height="7" rx="1" />
+                            <rect x="14" y="3" width="7" height="7" rx="1" />
+                            <rect x="3" y="14" width="7" height="7" rx="1" />
+                            <rect x="14" y="14" width="7" height="7" rx="1" />
+                        </svg></div>
+                    <h3 data-i18n="services.enterprise.title">Enterprise Architecture</h3>
+                    <p data-i18n="services.enterprise.desc">Platform integrations, digital process automation, and
+                        infrastructure modernization aligned with organizational goals.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg viewBox="0 0 24 24">
+                            <ellipse cx="12" cy="5" rx="9" ry="3" />
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                        </svg></div>
+                    <h3 data-i18n="services.data.title">Data Architecture</h3>
+                    <p data-i18n="services.data.desc">Designing scalable data platforms, DataOps workflows, and
+                        governance frameworks that turn raw data into strategic assets.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg viewBox="0 0 24 24">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            <path d="M9 12l2 2 4-4" />
+                        </svg></div>
+                    <h3 data-i18n="services.security.title">Cybersecurity</h3>
+                    <p data-i18n="services.security.desc">Implementing security standards, identity management, threat
+                        protection, and compliance controls across cloud environments.</p>
+                </div>
+            </div>
+        </section>
 
-<section id="experience" class="trusted">
-    <div class="section-header">
-        <h2>Experience</h2>
-        <p>Organizations I've had the privilege of working with.</p>
-    </div>
-    <div class="trusted-logos">
-        <span class="trusted-item"><img src="images/imf.png" alt="IMF">International Monetary Fund</span>
-        <span class="trusted-item"><img src="images/idb.svg" alt="IDB">Inter-American Development Bank</span>
-        <span class="trusted-item"><img src="images/sap.svg" alt="SAP Ariba">SAP Ariba</span>
-        <span class="trusted-item"><img src="images/efferent.png" alt="Efferent Health">Efferent Health</span>
-        <span class="trusted-item"><img src="images/juntoz.svg" alt="Juntoz">Juntoz.com</span>
-    </div>
-</section>
+        <section id="experience" class="trusted">
+            <div class="section-header">
+                <h2 data-i18n="experience.title">Experience</h2>
+                <p data-i18n="experience.subtitle">Organizations I've had the privilege of working with.</p>
+            </div>
+            <div class="trusted-logos">
+                <span class="trusted-item"><img src="images/imf.png" alt="IMF">International Monetary Fund</span>
+                <span class="trusted-item"><img src="images/idb.svg" alt="IDB">Inter-American Development Bank</span>
+                <span class="trusted-item"><img src="images/sap.svg" alt="SAP Ariba">SAP Ariba</span>
+                <span class="trusted-item"><img src="images/efferent.png" alt="Efferent Health">Efferent Health</span>
+                <span class="trusted-item"><img src="images/juntoz.svg" alt="Juntoz">Juntoz.com</span>
+            </div>
+        </section>
 
-<section id="background">
-    <div class="section-header">
-        <h2>Background</h2>
-        <p>Education and credentials that back the expertise.</p>
-    </div>
-    <div class="credentials">
-        <div class="credential-card">
-            <h3>Education</h3>
-            <div class="credential-item">
-                <strong>M.S. Computer/IT Administration</strong>
-                <span>Universidad Nacional de Trujillo &middot; 2023&ndash;2024</span>
+        <section id="background">
+            <div class="section-header">
+                <h2 data-i18n="background.title">Background</h2>
+                <p data-i18n="background.subtitle">Education and credentials that back the expertise.</p>
             </div>
-            <div class="credential-item">
-                <strong>B.S. Systems Engineering</strong>
-                <span>Universidad Nacional de Trujillo &middot; 2002&ndash;2007</span>
+            <div class="credentials">
+                <div class="credential-card">
+                    <h3 data-i18n="background.education">Education</h3>
+                    <div class="credential-item">
+                        <strong data-i18n="background.ms">M.S. Computer/IT Administration</strong>
+                        <span>Universidad Nacional de Trujillo &middot; 2023&ndash;2024</span>
+                    </div>
+                    <div class="credential-item">
+                        <strong data-i18n="background.bs">B.S. Systems Engineering</strong>
+                        <span>Universidad Nacional de Trujillo &middot; 2002&ndash;2007</span>
+                    </div>
+                </div>
+                <div class="credential-card">
+                    <h3 data-i18n="background.certifications">Certifications</h3>
+                    <div class="credential-item">
+                        <strong>Data Leadership: AI, Cloud and Governance</strong>
+                        <span>MIT Professional Education &middot; 2026</span>
+                    </div>
+                    <div class="credential-item">
+                        <strong>Cloud & DevOps: Continuous Transformation</strong>
+                        <span>MIT Professional Education &middot; 2025</span>
+                    </div>
+                </div>
+                <div class="credential-card">
+                    <h3 data-i18n="background.languages">Languages</h3>
+                    <div class="credential-item">
+                        <strong data-i18n="background.english">English</strong>
+                        <span data-i18n="background.english_level">Professional working proficiency</span>
+                    </div>
+                    <div class="credential-item">
+                        <strong data-i18n="background.spanish">Spanish</strong>
+                        <span data-i18n="background.spanish_level">Native</span>
+                    </div>
+                </div>
+                <div class="credential-card">
+                    <h3 data-i18n="background.focus">Focus Areas</h3>
+                    <div class="credential-item">
+                        <strong data-i18n="background.cloud_native">Cloud-Native Architecture</strong>
+                        <span data-i18n="background.cloud_native_desc">Azure, AWS, hybrid environments</span>
+                    </div>
+                    <div class="credential-item">
+                        <strong data-i18n="background.ai_genai">AI & GenAI</strong>
+                        <span data-i18n="background.ai_genai_desc">Foundation models, governance, deployment</span>
+                    </div>
+                    <div class="credential-item">
+                        <strong data-i18n="background.digital">Digital Transformation</strong>
+                        <span data-i18n="background.digital_desc">Migration, modernization, automation</span>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="credential-card">
-            <h3>Certifications</h3>
-            <div class="credential-item">
-                <strong>Data Leadership: AI, Cloud and Governance</strong>
-                <span>MIT Professional Education &middot; 2026</span>
-            </div>
-            <div class="credential-item">
-                <strong>Cloud & DevOps: Continuous Transformation</strong>
-                <span>MIT Professional Education &middot; 2025</span>
-            </div>
-        </div>
-        <div class="credential-card">
-            <h3>Languages</h3>
-            <div class="credential-item">
-                <strong>English</strong>
-                <span>Professional working proficiency</span>
-            </div>
-            <div class="credential-item">
-                <strong>Spanish</strong>
-                <span>Native</span>
-            </div>
-        </div>
-        <div class="credential-card">
-            <h3>Focus Areas</h3>
-            <div class="credential-item">
-                <strong>Cloud-Native Architecture</strong>
-                <span>Azure, AWS, hybrid environments</span>
-            </div>
-            <div class="credential-item">
-                <strong>AI & GenAI</strong>
-                <span>Foundation models, governance, deployment</span>
-            </div>
-            <div class="credential-item">
-                <strong>Digital Transformation</strong>
-                <span>Migration, modernization, automation</span>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<section id="connect">
-    <div class="cta-section">
-        <h2>Let's Build Something Great</h2>
-        <p>Ready to modernize your infrastructure or explore AI-driven solutions? I'd love to connect.</p>
-        <div class="cta-buttons">
-            <a href="mailto:me@fabriciorojas.com" class="btn btn-primary">Email Me</a>
-            <a href="https://linkedin.com/in/fabriciorojas" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
-        </div>
-    </div>
-</section>
+        <section id="connect">
+            <div class="cta-section">
+                <h2 data-i18n="cta.title">Let's Build Something Great</h2>
+                <p data-i18n="cta.desc">Ready to modernize your infrastructure or explore AI-driven solutions? I'd love
+                    to connect.</p>
+                <div class="cta-buttons">
+                    <a href="mailto:me@fabriciorojas.com" class="btn btn-primary" data-i18n="cta.email">Email Me</a>
+                    <a href="https://linkedin.com/in/fabriciorojas" target="_blank" rel="noopener"
+                        class="btn btn-ghost">LinkedIn</a>
+                </div>
+            </div>
+        </section>
 
-</main>
+    </main>
 
-<footer>
-    &copy; 2026 Fabricio Rojas &middot; <a href="mailto:me@fabriciorojas.com">me@fabriciorojas.com</a>
-</footer>
+    <footer>
+        &copy; 2026 Fabricio Rojas &middot; <a href="mailto:me@fabriciorojas.com">me@fabriciorojas.com</a>
+    </footer>
 
-<script>
-    window.addEventListener('scroll', () => {
-        document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
-    });
-</script>
+    <script>
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        const translations = {
+            en: {
+                'nav.expertise': 'Expertise',
+                'nav.experience': 'Experience',
+                'nav.background': 'Background',
+                'nav.connect': 'Connect',
+                'hero.title': 'Building the future, <span class="highlight">one cloud at a time.</span>',
+                'hero.desc': "I'm Fabricio Rojas — a Tech Lead helping organizations modernize infrastructure, adopt AI, and scale through cloud-native solutions.",
+                'hero.cta': 'Get in Touch',
+                'services.title': 'What I Do',
+                'services.subtitle': 'Nearly 20 years turning complex infrastructure challenges into scalable, automated solutions.',
+                'services.cloud.title': 'Cloud Architecture',
+                'services.cloud.desc': 'Design and implement cloud-native platforms on Azure and AWS. From adoption strategy to seamless migration from on-premises.',
+                'services.devops.title': 'DevSecOps & Automation',
+                'services.devops.desc': 'CI/CD pipelines, infrastructure as code, continuous monitoring, and security-first DevOps practices at scale.',
+                'services.ai.title': 'AI-Driven Solutions',
+                'services.ai.desc': 'Leading AI adoption through Generative AI, intelligent automation, and AI governance integrated with cloud ecosystems.',
+                'services.enterprise.title': 'Enterprise Architecture',
+                'services.enterprise.desc': 'Platform integrations, digital process automation, and infrastructure modernization aligned with organizational goals.',
+                'services.data.title': 'Data Architecture',
+                'services.data.desc': 'Designing scalable data platforms, DataOps workflows, and governance frameworks that turn raw data into strategic assets.',
+                'services.security.title': 'Cybersecurity',
+                'services.security.desc': 'Implementing security standards, identity management, threat protection, and compliance controls across cloud environments.',
+                'experience.title': 'Experience',
+                'experience.subtitle': "Organizations I've had the privilege of working with.",
+                'background.title': 'Background',
+                'background.subtitle': 'Education and credentials that back the expertise.',
+                'background.education': 'Education',
+                'background.ms': 'M.S. Computer/IT Administration',
+                'background.bs': 'B.S. Systems Engineering',
+                'background.certifications': 'Certifications',
+                'background.languages': 'Languages',
+                'background.english': 'English',
+                'background.english_level': 'Professional working proficiency',
+                'background.spanish': 'Spanish',
+                'background.spanish_level': 'Native',
+                'background.focus': 'Focus Areas',
+                'background.cloud_native': 'Cloud-Native Architecture',
+                'background.cloud_native_desc': 'Azure, AWS, hybrid environments',
+                'background.ai_genai': 'AI & GenAI',
+                'background.ai_genai_desc': 'Foundation models, governance, deployment',
+                'background.digital': 'Digital Transformation',
+                'background.digital_desc': 'Migration, modernization, automation',
+                'cta.title': "Let's Build Something Great",
+                'cta.desc': "Ready to modernize your infrastructure or explore AI-driven solutions? I'd love to connect.",
+                'cta.email': 'Email Me'
+            },
+            es: {
+                'nav.expertise': 'Experiencia',
+                'nav.experience': 'Trayectoria',
+                'nav.background': 'Formaci\u00f3n',
+                'nav.connect': 'Contacto',
+                'hero.title': 'Construyendo el futuro, <span class="highlight">una nube a la vez.</span>',
+                'hero.desc': 'Soy Fabricio Rojas — L\u00edder de TI dedicado a ayudar a las organizaciones a modernizar su infraestructura, adoptar IA y escalar mediante soluciones cloud-native.',
+                'hero.cta': 'Cont\u00e1ctame',
+                'services.title': 'Lo Que Hago',
+                'services.subtitle': 'Casi 20 a\u00f1os transformando desaf\u00edos complejos de infraestructura en soluciones escalables y automatizadas.',
+                'services.cloud.title': 'Arquitectura Cloud',
+                'services.cloud.desc': 'Dise\u00f1o e implementaci\u00f3n de plataformas cloud-native en Azure y AWS. Desde la estrategia de adopci\u00f3n hasta la migraci\u00f3n desde entornos on-premises.',
+                'services.devops.title': 'DevSecOps y Automatizaci\u00f3n',
+                'services.devops.desc': 'Pipelines de CI/CD, infraestructura como c\u00f3digo, monitoreo continuo y pr\u00e1cticas DevOps con seguridad integrada a escala.',
+                'services.ai.title': 'Soluciones con IA',
+                'services.ai.desc': 'Liderando la adopci\u00f3n de IA a trav\u00e9s de IA Generativa, automatizaci\u00f3n inteligente y gobernanza de IA integrada con ecosistemas cloud.',
+                'services.enterprise.title': 'Arquitectura Empresarial',
+                'services.enterprise.desc': 'Integraciones de plataformas, automatizaci\u00f3n de procesos digitales y modernizaci\u00f3n de infraestructura alineada con los objetivos organizacionales.',
+                'services.data.title': 'Arquitectura de Datos',
+                'services.data.desc': 'Dise\u00f1o de plataformas de datos escalables, flujos de trabajo DataOps y marcos de gobernanza que convierten datos en activos estrat\u00e9gicos.',
+                'services.security.title': 'Ciberseguridad',
+                'services.security.desc': 'Implementaci\u00f3n de est\u00e1ndares de seguridad, gesti\u00f3n de identidades, protecci\u00f3n contra amenazas y controles de cumplimiento en entornos cloud.',
+                'experience.title': 'Trayectoria',
+                'experience.subtitle': 'Organizaciones con las que he tenido el privilegio de trabajar.',
+                'background.title': 'Formaci\u00f3n',
+                'background.subtitle': 'Educaci\u00f3n y credenciales que respaldan la experiencia.',
+                'background.education': 'Educaci\u00f3n',
+                'background.ms': 'Maestr\u00eda en Administraci\u00f3n de TI',
+                'background.bs': 'Ingenier\u00eda de Sistemas',
+                'background.certifications': 'Certificaciones',
+                'background.languages': 'Idiomas',
+                'background.english': 'Ingl\u00e9s',
+                'background.english_level': 'Competencia profesional',
+                'background.spanish': 'Espa\u00f1ol',
+                'background.spanish_level': 'Nativo',
+                'background.focus': '\u00c1reas de Enfoque',
+                'background.cloud_native': 'Arquitectura Cloud-Native',
+                'background.cloud_native_desc': 'Azure, AWS, entornos h\u00edbridos',
+                'background.ai_genai': 'IA e IA Generativa',
+                'background.ai_genai_desc': 'Modelos fundacionales, gobernanza, despliegue',
+                'background.digital': 'Transformaci\u00f3n Digital',
+                'background.digital_desc': 'Migraci\u00f3n, modernizaci\u00f3n, automatizaci\u00f3n',
+                'cta.title': 'Construyamos Algo Grande',
+                'cta.desc': '\u00bfListo para modernizar tu infraestructura o explorar soluciones impulsadas por IA? Me encantar\u00eda conectar.',
+                'cta.email': 'Escr\u00edbeme'
+            }
+        };
+
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+            const btn = document.getElementById('langSwitch');
+            btn.textContent = lang === 'en' ? 'ES' : 'EN';
+            btn.setAttribute('aria-label', lang === 'en' ? 'Cambiar a espa\u00f1ol' : 'Switch to English');
+            localStorage.setItem('lang', lang);
+        }
+
+        document.getElementById('langSwitch').addEventListener('click', () => {
+            const current = localStorage.getItem('lang') || 'en';
+            setLanguage(current === 'en' ? 'es' : 'en');
+        });
+
+        // Apply saved language preference
+        const savedLang = localStorage.getItem('lang');
+        if (savedLang && savedLang !== 'en') {
+            setLanguage(savedLang);
+        }
+    </script>
 
 </body>
+
 </html>
