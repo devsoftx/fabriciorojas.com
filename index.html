@@ -1259,7 +1259,7 @@
                 'nav.background': 'Background',
                 'nav.connect': 'Connect',
                 'hero.title': 'Building the future, <span class="highlight">one cloud at a time.</span>',
-                'hero.desc': "I'm Fabricio Rojas — a Tech Lead helping organizations modernize infrastructure, adopt AI, and scale through cloud-native solutions.",
+                'hero.desc': "I'm Fabricio Rojas — a IT Lead helping organizations modernize infrastructure, adopt AI, and scale through cloud-native solutions.",
                 'hero.cta': 'Get in Touch',
                 'bio.title': 'About Me',
                 'bio.desc': "I'm Jose Fabricio Rojas Quiroz, a Cloud Solution Architect and Tech Lead based in Washington, D.C. With nearly 20 years of experience at organizations like the IMF, IDB, and SAP Ariba, I specialize in cloud architecture, DevSecOps, AI-driven solutions, and enterprise modernization. I'm passionate about helping teams leverage technology to solve complex challenges and deliver real impact.",
@@ -1393,8 +1393,9 @@
             setLanguage(savedLang);
         }
 
-        // WhatsApp Form
-        const WHATSAPP_NUMBER = '12408179713';
+        // WhatsApp Form — number is obfuscated and only decoded after CAPTCHA
+        const _wp = [49, 50, 52, 48, 56, 49, 55, 57, 55, 49, 51];
+        function _getWN() { return _wp.map(c => String.fromCharCode(c)).join(''); }
 
         let captchaA, captchaB, captchaAnswer;
 
@@ -1480,7 +1481,7 @@
             if (phone) text += isEs ? `Tel: ${phone}\n` : `Phone: ${phone}\n`;
             text += `\n${message}`;
 
-            const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+            const waUrl = `https://wa.me/${_getWN()}?text=${encodeURIComponent(text)}`;
             window.open(waUrl, '_blank');
 
             // Reset form
