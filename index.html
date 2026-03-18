@@ -84,6 +84,13 @@
         "hasCredential": [
             {
                 "@type": "EducationalOccupationalCredential",
+                "name": "AI Governance and Ethics",
+                "credentialCategory": "Certificate",
+                "recognizedBy": {"@type": "Organization", "name": "Brown University"},
+                "dateCreated": "2024"
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
                 "name": "Data Leadership: AI, Cloud and Governance",
                 "credentialCategory": "Certificate",
                 "recognizedBy": {"@type": "Organization", "name": "MIT Professional Education"},
@@ -386,6 +393,58 @@
         .btn-ghost:hover {
             border-color: rgba(255, 255, 255, 0.6);
             box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+        }
+
+        /* BIO */
+        .bio {
+            background: var(--white);
+            border-bottom: 1px solid #ececf4;
+        }
+
+        .bio-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .bio-photo {
+            flex-shrink: 0;
+        }
+
+        .bio-photo img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 8px 30px rgba(91, 75, 223, 0.15);
+            border: 4px solid #ececf4;
+        }
+
+        .bio-text h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 0.8rem;
+        }
+
+        .bio-text p {
+            font-size: 1.05rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .bio-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .bio-photo img {
+                width: 180px;
+                height: 180px;
+            }
         }
 
         /* SECTIONS */
@@ -913,6 +972,7 @@
     <nav id="navbar" aria-label="Main navigation">
         <a href="#" class="logo" aria-label="Fabricio Rojas - Home">FR</a>
         <ul class="nav-links">
+            <li><a href="#bio" data-i18n="nav.bio">Bio</a></li>
             <li><a href="#expertise" data-i18n="nav.expertise">Expertise</a></li>
             <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
             <li><a href="#background" data-i18n="nav.background">Background</a></li>
@@ -940,6 +1000,22 @@
                     <a href="mailto:me@fabriciorojas.com" class="btn btn-primary" data-i18n="hero.cta">Get in Touch</a>
                     <a href="https://linkedin.com/in/fabriciorojas" target="_blank" rel="noopener"
                         class="btn btn-ghost">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="bio" class="bio">
+            <div class="bio-container">
+                <div class="bio-photo">
+                    <img src="images/me.JPEG" alt="Fabricio Rojas" loading="lazy">
+                </div>
+                <div class="bio-text">
+                    <h2 data-i18n="bio.title">About Me</h2>
+                    <p data-i18n="bio.desc">I'm Jose Fabricio Rojas Quiroz, a Cloud Solution Architect and Tech Lead
+                        based in Washington, D.C. With nearly 20 years of experience at organizations like the IMF, IDB,
+                        and SAP Ariba, I specialize in cloud architecture, DevSecOps, AI-driven solutions, and
+                        enterprise modernization. I'm passionate about helping teams leverage technology to solve
+                        complex challenges and deliver real impact.</p>
                 </div>
             </div>
         </section>
@@ -1057,6 +1133,10 @@
                         <strong>Cloud & DevOps: Continuous Transformation</strong>
                         <span>MIT Professional Education &middot; 2025</span>
                     </div>
+                    <div class="credential-item">
+                        <strong>AI Governance and Ethics</strong>
+                        <span>Brown University &middot; 2024</span>
+                    </div>
                 </div>
                 <div class="credential-card">
                     <h3 data-i18n="background.languages">Languages</h3>
@@ -1108,17 +1188,24 @@
 
     <!-- WhatsApp Floating Button & Form -->
     <button class="wa-fab" id="waFab" aria-label="Contact via WhatsApp">
-        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <svg viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
     </button>
 
     <div class="wa-overlay" id="waOverlay">
         <div class="wa-form" id="waForm">
             <button class="wa-form-close" id="waClose" aria-label="Close">&times;</button>
             <h3>
-                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
                 <span data-i18n="wa.title">WhatsApp Me</span>
             </h3>
-            <p class="wa-form-subtitle" data-i18n="wa.subtitle">Fill in your details and I'll receive your message on WhatsApp.</p>
+            <p class="wa-form-subtitle" data-i18n="wa.subtitle">Fill in your details and I'll receive your message on
+                WhatsApp.</p>
 
             <div class="wa-field">
                 <label for="waName" data-i18n="wa.name">Name *</label>
@@ -1143,12 +1230,17 @@
             <div class="wa-captcha">
                 <span class="wa-captcha-question" id="waCaptchaQ"></span>
                 <input type="number" id="waCaptchaA" aria-label="CAPTCHA answer">
-                <button class="wa-captcha-refresh" id="waCaptchaRefresh" aria-label="New CAPTCHA" title="New question">&#8635;</button>
+                <button class="wa-captcha-refresh" id="waCaptchaRefresh" aria-label="New CAPTCHA"
+                    title="New question">&#8635;</button>
             </div>
-            <p class="wa-error-msg" id="waCaptchaErr" data-i18n="wa.captcha_error">Incorrect answer. Please try again.</p>
+            <p class="wa-error-msg" id="waCaptchaErr" data-i18n="wa.captcha_error">Incorrect answer. Please try again.
+            </p>
 
             <button class="wa-submit" id="waSubmit">
-                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
                 <span data-i18n="wa.send">Send via WhatsApp</span>
             </button>
         </div>
@@ -1161,6 +1253,7 @@
 
         const translations = {
             en: {
+                'nav.bio': 'Bio',
                 'nav.expertise': 'Expertise',
                 'nav.experience': 'Experience',
                 'nav.background': 'Background',
@@ -1168,6 +1261,8 @@
                 'hero.title': 'Building the future, <span class="highlight">one cloud at a time.</span>',
                 'hero.desc': "I'm Fabricio Rojas — a Tech Lead helping organizations modernize infrastructure, adopt AI, and scale through cloud-native solutions.",
                 'hero.cta': 'Get in Touch',
+                'bio.title': 'About Me',
+                'bio.desc': "I'm Jose Fabricio Rojas Quiroz, a Cloud Solution Architect and Tech Lead based in Washington, D.C. With nearly 20 years of experience at organizations like the IMF, IDB, and SAP Ariba, I specialize in cloud architecture, DevSecOps, AI-driven solutions, and enterprise modernization. I'm passionate about helping teams leverage technology to solve complex challenges and deliver real impact.",
                 'services.title': 'What I Do',
                 'services.subtitle': 'Nearly 20 years turning complex infrastructure challenges into scalable, automated solutions.',
                 'services.cloud.title': 'Cloud Architecture',
@@ -1215,6 +1310,7 @@
                 'wa.captcha_error': 'Incorrect answer. Please try again.'
             },
             es: {
+                'nav.bio': 'Bio',
                 'nav.expertise': 'Experiencia',
                 'nav.experience': 'Trayectoria',
                 'nav.background': 'Formaci\u00f3n',
@@ -1222,7 +1318,9 @@
                 'hero.title': 'Construyendo el futuro, <span class="highlight">una nube a la vez.</span>',
                 'hero.desc': 'Soy Fabricio Rojas — L\u00edder de TI dedicado a ayudar a las organizaciones a modernizar su infraestructura, adoptar IA y escalar mediante soluciones cloud-native.',
                 'hero.cta': 'Cont\u00e1ctame',
-                'services.title': 'Lo Que Hago',
+                'bio.title': 'Acerca de m\u00ed',
+                'bio.desc': 'Soy Jose Fabricio Rojas Quiroz, Arquitecto de Soluciones Cloud y L\u00edder de TI con sede en Washington, D.C. Con casi 20 a\u00f1os de experiencia en organizaciones como el FMI, el BID y SAP Ariba, me especializo en arquitectura cloud, DevSecOps, soluciones impulsadas por IA y modernizaci\u00f3n empresarial. Me apasiona ayudar a los equipos a aprovechar la tecnolog\u00eda para resolver desaf\u00edos complejos y generar un impacto real.',
+                'services.title': 'Áreas de Especializaci\u00f3n',
                 'services.subtitle': 'Casi 20 a\u00f1os transformando desaf\u00edos complejos de infraestructura en soluciones escalables y automatizadas.',
                 'services.cloud.title': 'Arquitectura Cloud',
                 'services.cloud.desc': 'Dise\u00f1o e implementaci\u00f3n de plataformas cloud-native en Azure y AWS. Desde la estrategia de adopci\u00f3n hasta la migraci\u00f3n desde entornos on-premises.',
